@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cute & Aesthetic Page</title>
+    <!-- Google font for a soft look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="confetti-container"></div>
+    <header>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="notes.html">Notes</a>
+            <a href="assignments.html">Assignments</a>
+        </nav>
+        <h1 class="cute-title">🌸 Welcome to Notes 🌸</h1>
+    </header>
+    <main>
+        <div class="home-grid">
+            <section class="card side-card">
+                <h2>✨ Quick Info</h2>
+                <div>
+                    <h3>Current Time</h3>
+                    <p id="clock">--:--:--</p>
+                </div>
+                <div>
+                    <h3>Greet Me</h3>
+                    <input type="text" id="nameInput" placeholder="Enter your name">
+                    <button id="greetButton">Greet</button>
+                    <p id="greetingText"></p>
+                </div>
+                <button id="themeButton">Toggle Dark/Light 🌙</button>
+            </section>
+
+            <section class="main-content">
+                <section class="card">
+                    <h2>Add Subject</h2>
+                    <input type="text" id="subjectInput" placeholder="Subject name">
+                    <button id="addSubjectButton">Add Subject</button>
+                </section>
+
+                <div id="notesContainer"></div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 Example Site <span>💖</span></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

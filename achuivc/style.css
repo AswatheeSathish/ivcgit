@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* navigation bar */
+.main-nav {
+    margin-bottom: 0.5rem;
+}
+.main-nav a {
+    text-decoration: none;
+    color: #333;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+    padding: 0.3rem 0.6rem;
+    border-radius: 12px;
+    margin: 0 0.3rem;
+    transition: background 0.2s ease;
+}
+.main-nav a:hover {
+    background: linear-gradient(45deg, #ffb3c1, #ffdde1);
+}
+
+/* subject/assignment styling */
+.subject-card {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 1rem;
+    margin: 1rem auto;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.subject-card h3 {
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.subject-card h3 button {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #ff6b81;
+}
+.assignments-list {
+    margin-top: 0.5rem;
+}
+.assignment-item {
+    background-color: #fff0f8;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 8px;
+    position: relative;
+}
+.assignment-item.done {
+    opacity: 0.6;
+    text-decoration: line-through;
+}
+.assignment-item button {
+    position: absolute;
+    top: 0.25rem;
+    right: 0.25rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #ff6b81;
+}
+.card input,
+.card textarea,
+.add-assignment input,
+.add-assignment textarea,
+select {
+    width: calc(100% - 1rem);
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* home page grid layout */
+.home-grid {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.side-card {
+    position: sticky;
+    top: 2rem;
+    height: fit-content;
+}
+.main-content {
+    display: flex;
+    flex-direction: column;
+}
+@media (max-width: 768px) {
+    .home-grid {
+        grid-template-columns: 1fr;
+    }
+    .side-card {
+        position: static;
+    }
+}
+
+.side-card div {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.side-card div:last-of-type {
+    border-bottom: none;
+}
+
+.notes-list {
+    margin-top: 0.5rem;
+}
+.note-item {
+    background-color: #fff0f8;
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+    border-radius: 6px;
+    position: relative;
+}
+.note-item p {
+    margin: 0;
+    margin-bottom: 0.25rem;
+}
+.note-item small {
+    color: #999;
+    font-size: 0.8rem;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* pastel rainbow gradient background */
+    background: linear-gradient(135deg, #fceabb 0%, #f8b500 25%, #ff9a9e 50%, #fad0c4 75%, #ffefba 100%);
+    transition: background 0.5s ease, color 0.5s ease;
+}
+header, footer {
+    background: linear-gradient(90deg, #ff9a8b, #ffcfd2, #ffeead);
+    color: #333;
+    text-align: center;
+    padding: 1rem 0;
+}
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+/* dark theme overrides */
+.dark-theme {
+    background: linear-gradient(135deg, #2e1f3a 0%, #1a1426 100%);
+    color: #e0c3fc;
+}
+.dark-theme header, .dark-theme footer {
+    background: #230837;
+    color: #f3e5f5;
+}
+.dark-theme button {
+    background: linear-gradient(45deg, #5e35b1, #7e57c2);
+    color: #fff;
+}
+.dark-theme button:hover {
+    background: linear-gradient(45deg, #7e57c2, #9575cd);
+}
+.dark-theme .card {
+    background-color: rgba(50,0,70,0.7);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+.dark-theme .main-nav a {
+    background-color: #3a0f4b;
+    color: #f3e5f5;
+}
+.dark-theme .main-nav a:hover {
+    background-color: #5e35b1;
+}
+button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+    color: #333;
+    transition: background 0.2s ease, transform 0.2s ease;
+    margin: 0.25rem;
+}
+button:hover {
+    background: linear-gradient(45deg, #ffb3c1, #ffdde1);
+    transform: scale(1.05);
+}
+#message {
+    font-size: 1.2rem;
+    margin-top: 0.75rem;
+    color: #555;
+}
+.card {
+    background-color: rgba(255,255,255,0.8);
+    padding: 1.5rem;
+    margin: 1rem auto;
+    max-width: 400px;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+input[type="text"] {
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+#clock {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+/* alternating card colors */
+.card:nth-child(odd) { background-color: rgba(255,240,245,0.9); }
+.card:nth-child(even) { background-color: rgba(240,255,250,0.9); }
+
+#confetti-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    pointer-events: none;
+    overflow: visible;
+}
+@keyframes floatUp {
+    from { transform: translateY(0); opacity: 1; }
+    to { transform: translateY(-100px) rotate(360deg); opacity: 0; }
+}
+.confetti {
+    position: absolute;
+    font-size: 1.5rem;
+    animation: floatUp 1.5s ease-out forwards;
+}
+
+/* cute title styling */
+.cute-title {
+    font-weight: 600;
+    letter-spacing: 1px;
+    background: linear-gradient(90deg, #ff9a9e, #fad0c4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+

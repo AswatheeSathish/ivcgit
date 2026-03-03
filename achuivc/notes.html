@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Notes</title>
+    <!-- reuse fonts and styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="confetti-container"></div>
+    <header>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="notes.html">Notes</a>
+            <a href="assignments.html">Assignments</a>
+        </nav>
+        <h1 class="cute-title">🗒️ My Notes & Assignments 🗒️</h1>
+    </header>
+    <main>
+        <section class="card">
+            <h2>Add Subject</h2>
+            <input type="text" id="subjectInput" placeholder="Subject name">
+            <button id="addSubjectButton">Add Subject</button>
+        </section>
+        <section class="card">
+            <h2>Search Notes</h2>
+            <input type="text" id="searchInput" placeholder="Search by subject or assignment">
+        </section>
+        <div id="subjectsContainer"></div>
+        <section class="card">
+            <button id="clearButton">Delete All Notes</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Example Site <span>💖</span></p>
+    </footer>
+    <script src="notes.js"></script>
+</body>
+</html>
